@@ -10,5 +10,5 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.test2.TestController"
             prefHeight="400.0" prefWidth="600.0">
-    <Button text="click me leon" onAction="#clickMeLeon"/>
+    <Button text="click me leon" onAction="#clickMeLeon" fx:id="mybtnId"/>
 </AnchorPane>
