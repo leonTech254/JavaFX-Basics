@@ -57,7 +57,6 @@ public class TestController {
         femaleRadioButton.setToggleGroup(genderToggleGroup);
         otherRadioButton.setToggleGroup(genderToggleGroup);
 
-        // Optionally, you can set a default selection:
         maleRadioButton.setSelected(true);
     }
 

@@ -9,11 +9,13 @@
 <VBox xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.test2.TestController"
-            prefHeight="400.0" prefWidth="600.0" spacing="10">
+            prefHeight="400.0" prefWidth="600.0" spacing="10"
+      style="@style.css"
+>
     <Button text="click me leon" onAction="#clickMeLeon" fx:id="mybtnId"/>
     <Button text="call alert" onAction="#callAlert" fx:id="CallAlert"/>
 
-    <HBox alignment="TOP_LEFT" spacing="10">
+    <HBox alignment="TOP_LEFT" spacing="10" styleClass="root">
         <Label text="Firstname"/>
         <TextField fx:id="mytexField" promptText="Enter username"/>
     </HBox>
