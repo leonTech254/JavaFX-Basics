@@ -1,10 +1,7 @@
 package com.example.test2;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class TestController {
     @FXML
@@ -14,6 +11,9 @@ public class TestController {
     private Button mybtnId;
     @FXML
     private TextField mytexField;
+
+    @FXML
+    private CheckBox agrements;
 
     @FXML
     private  void clickMeLeon()
@@ -31,6 +31,12 @@ public class TestController {
         alert.setHeaderText(null);
         alert.setContentText("This is an alert box!");
         alert.showAndWait();
+    }
+
+    @FXML
+    private void  onthecheckBox()
+    {
+        System.out.println(agrements.isSelected());
     }
 
 }

@@ -18,4 +18,8 @@
         <TextField fx:id="mytexField" promptText="Enter username"/>
     </HBox>
 
+    <HBox alignment="TOP_LEFT" spacing="10">
+        <CheckBox text="terms and conditions" fx:id="agrements" onAction="#onthecheckBox"/>
+    </HBox>
+
 </VBox>
