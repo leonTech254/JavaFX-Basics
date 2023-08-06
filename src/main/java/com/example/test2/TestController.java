@@ -14,6 +14,16 @@ public class TestController {
 
     @FXML
     private CheckBox agrements;
+    @FXML
+    private RadioButton maleRadioButton;
+
+    @FXML
+    private RadioButton femaleRadioButton;
+
+    @FXML
+    private RadioButton otherRadioButton;
+
+    private ToggleGroup genderToggleGroup;
 
     @FXML
     private  void clickMeLeon()
@@ -37,6 +47,18 @@ public class TestController {
     private void  onthecheckBox()
     {
         System.out.println(agrements.isSelected());
+    }
+
+
+    @FXML
+    public void initialize() {
+        genderToggleGroup = new ToggleGroup();
+        maleRadioButton.setToggleGroup(genderToggleGroup);
+        femaleRadioButton.setToggleGroup(genderToggleGroup);
+        otherRadioButton.setToggleGroup(genderToggleGroup);
+
+        // Optionally, you can set a default selection:
+        maleRadioButton.setSelected(true);
     }
 
 }

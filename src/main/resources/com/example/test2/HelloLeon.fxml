@@ -21,5 +21,15 @@
     <HBox alignment="TOP_LEFT" spacing="10">
         <CheckBox text="terms and conditions" fx:id="agrements" onAction="#onthecheckBox"/>
     </HBox>
+    <HBox alignment="CENTER_LEFT" spacing="20" xmlns:fx="http://javafx.com/fxml">
+        <RadioButton text="Male" fx:id="maleRadioButton" />
+        <RadioButton text="Female" fx:id="femaleRadioButton" />
+        <RadioButton text="Other" fx:id="otherRadioButton" />
+    </HBox>
+
+
+
+
+
 
 </VBox>
