@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class TestController {
     @FXML
@@ -11,6 +12,8 @@ public class TestController {
 
     @FXML
     private Button mybtnId;
+    @FXML
+    private TextField mytexField;
 
     @FXML
     private  void clickMeLeon()
@@ -21,6 +24,8 @@ public class TestController {
     @FXML
     private  void  callAlert()
     {
+        System.out.println(mytexField.getText());
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Alert");
         alert.setHeaderText(null);
